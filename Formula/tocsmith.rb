@@ -5,7 +5,7 @@ class Tocsmith < Formula
   homepage "https://github.com/SomerledDesign/TocSmith"
   url "https://github.com/SomerledDesign/TocSmith/archive/refs/tags/v1.0.0.tar.gz"
   sha256 "c30ee8d7f2f72ca5a054e12aa733834f96411290af6a97a7e6a8f2ed50506a09"
-  license :cannot_represent
+  license "GPL-3.0-or-later"
 
   depends_on "python@3.14"
 
