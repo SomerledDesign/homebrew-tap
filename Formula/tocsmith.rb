@@ -3,8 +3,8 @@ class Tocsmith < Formula
 
   desc "Forge navigable, finished PDFs from printed tables of contents"
   homepage "https://github.com/SomerledDesign/TocSmith"
-  url "https://github.com/SomerledDesign/TocSmith/archive/refs/tags/v1.0.1.tar.gz"
-  sha256 "4841a88c111867e439edf4ae9b5ca976aaeaa7daf1c715cbbb9c4def64f1ad78"
+  url "https://github.com/SomerledDesign/TocSmith/archive/refs/tags/v1.1.0.tar.gz"
+  sha256 "d78c3edca4f302fc231eb9429dde5d061421b56f74831426d10198e52041a6fb"
   license "GPL-3.0-or-later"
 
   depends_on "python@3.14"
@@ -30,7 +30,7 @@ class Tocsmith < Formula
   end
 
   test do
-    assert_match "TocSmith 1.0.1 (347)", shell_output("#{bin}/tocsmith --version")
+    assert_match "TocSmith 1.1.0 (348)", shell_output("#{bin}/tocsmith --version")
     assert_path_exists man1/"tocsmith.1"
 
     system libexec/"bin/python", "-c", <<~PYTHON
